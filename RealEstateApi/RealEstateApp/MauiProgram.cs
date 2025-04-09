@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using RealEstateApp.Pages;
 
 namespace RealEstateApp
 {
@@ -14,6 +15,8 @@ namespace RealEstateApp
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddSingleton<RegisterPage>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
