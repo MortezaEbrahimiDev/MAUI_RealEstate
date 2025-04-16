@@ -1,4 +1,6 @@
-﻿namespace RealEstateApp
+﻿using RealEstateApp.Pages;
+
+namespace RealEstateApp
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new LoginPage();
         }
     }
 }

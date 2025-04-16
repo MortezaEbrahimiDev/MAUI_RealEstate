@@ -8,6 +8,6 @@ namespace RealEstateApp.Settings
 {
     public static class AppSettings
     {
-        public static string ApiUrl = "http://localhost:5022/";
+        public static string ApiUrl = "https://172.22.6.147:7022/";
     }
 }

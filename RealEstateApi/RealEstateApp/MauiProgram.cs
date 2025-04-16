@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using RealEstateApp.Pages;
 
 namespace RealEstateApp
 {
@@ -6,6 +7,7 @@ namespace RealEstateApp
     {
         public static MauiApp CreateMauiApp()
         {
+
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
@@ -14,6 +16,8 @@ namespace RealEstateApp
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddSingleton<RegisterPage>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
